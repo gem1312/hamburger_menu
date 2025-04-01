@@ -1,3 +1,96 @@
-.body{
-    background-color: aqua;
+* {
+
+    margin: 0px;
+    padding: 0px;
 }
+
+header{
+    display: flex; 
+    align-items: center;
+    background-color: aqua;
+    color: white; 
+    padding: 20px;
+
+}
+
+img{
+
+width: 100px;
+height: 100px;
+border-radius: 50%;
+
+
+}
+
+nav {
+    margin-left: auto;
+}
+    
+nav ul{
+    list-style: none;
+    display: flex;
+
+}
+nav ul li a {	
+    color: rgb(71, 69, 69); 
+    font-size: 36px;
+    text-decoration: none;
+    margin-right: 20px;
+
+
+ }
+
+ nav ul li:not(:last-child) {
+    margin-right: 20px;
+
+ }	
+
+ nav ul li a:hover,
+ nav ul li a:focus{
+    color: rgb(153, 112, 58);
+ }
+
+ .hamburger{
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+    margin-left: auto;
+    justify-content: center;
+ }
+
+
+ .hamburger span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+
+
+ }
+
+ .hamburger span:not(child){
+
+        margin-bottom: 7px;
+
+ }
+ nav ul :active{
+    display: flex;
+ }
+
+ @media (max-width:760px){
+    .hamburger {
+
+        display: flex;
+    }
+
+    nav ul {
+        
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 50px;
+        background-color: blue ;
+    }
+
+ }
