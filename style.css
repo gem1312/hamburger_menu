@@ -73,7 +73,7 @@ nav ul li a {
         margin-bottom: 7px;
 
  }
- nav ul :active{
+ nav ul:active {
     display: flex;
  }
 
